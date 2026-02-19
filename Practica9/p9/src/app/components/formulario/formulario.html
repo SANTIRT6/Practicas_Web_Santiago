@@ -1,0 +1,30 @@
+<div class="card shadow">
+  <div class="card-header bg-success text-white">
+    <h4 class="mb-0">Registrar Alumno</h4>
+  </div>
+
+  <div class="card-body">
+    <form #formAlumno="ngForm" (ngSubmit)="guardarAlumno(formAlumno)">
+
+      <div class="mb-3">
+        <label class="form-label">Nombre</label>
+        <input class="form-control" ngModel name="nombre" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Edad</label>
+        <input type="number" class="form-control" ngModel name="edad" required>
+      </div>
+
+      <div class="mb-3">
+        <label class="form-label">Carrera</label>
+        <input class="form-control" ngModel name="carrera" required>
+      </div>
+
+      <button class="btn btn-success w-100" type="submit">
+        Guardar Alumno
+      </button>
+
+    </form>
+  </div>
+</div>
